@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Destination Unknown</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row col-md-8 col-md-offset-2" id="header">
+                <div class="col-md-2">
+                    <img src="assets/images/Earth.png" class="logo"></img>
+                </div>
+                <div class="col-md-5 header-style">
+                    <h1>Destination Unknown</h1>
+                    <p>Helping you decide your next getaway</p>
+                </div>
+                <div class="col-md-2">
+                    <p>Telephone: 01111 222 333</p>
+                </div>
+                <div class="col-md-3">
+                    <p>Email: enquiries@destinationunknown.com</p>
+                </div>
+            </div>
+    </header>
+    <!-- Search Box-->
+    <div class="container-fluid">
+        <div class="row col-md-8 col-md-offset-2">
+            <form onsubmit="return searchCity();">
+                <div class="form-group col-md-9">
+                    <input id="city" type="text" name="destination" class="form-control" placeholder="Search for a city">
+                </div>
+                <div class="col-md-3">
+                    <button type="submit" class="btn btn-default search-btn">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Map and buttons -->
+    <div class="container-fluid">
+        <div class="row row-table col-md-8 col-md-offset-2">
+            <div class="col-md-9">
+                <div id="map" style="min-height: 400px;"></div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <h3>Search in this area</h3>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-default">Hotels</button>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-default">Touist attractions</button>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-default">Food and drink</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid">
+        <div id="footer-details" class="row">
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">About</h5>
+                <p class="inline-block">
+                    Making your holiday planning easier and user-friendly
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h5></h5>
+                <p class="inline-block">
+                    &copy;2018 Destination Unknown Inc
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h5>Contact us</h5>
+                <ul>
+                    <li><a target="_blank" href="#"><i class="fa fa-phone"></i><p>07111 222 333</p></a></li>
+                    <li><a target="_blank" href="#"><i class="fa fa-envelope"></i><p>enquiries@destinationunknown.com</p></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="assets/js/maps.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2eF6gpUUD1C4lOGF1bxVhBzvIUo7o86A&libraries=places&callback=initMap" async defer></script>
+</body>
+
+</html>
