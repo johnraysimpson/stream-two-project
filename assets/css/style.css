@@ -1,19 +1,103 @@
+body {
+    background-image: url("../images/background-image.png");
+}
+
+body > div {
+    background-color: rgba(57, 56, 58, 0.8);
+    color: #fafafa;
+}
+
+footer, header {
+    background-color: rgba(57, 56, 58, 1);
+    color: #fafafa;
+}
+
+#info-content {
+    color: #000;
+}
+
 #header {
-    padding: 20px 0;
+    padding: 20px;
+}
+
+#map, #buttons {
+    margin-bottom: 20px;
+}
+
+#search-hotels {
+    background: forestgreen;
+    border-color: darkgreen;
+    color: #fafafa;
+    font-weight: 700;
+}
+
+#search-museum, #search-zoo, #search-shopping {
+    background-color: firebrick;
+    border-color: darkred;
+    color: #fafafa;
+    font-weight: 700;
+}
+
+#search-restaurant, #search-bar, #search-cafe {
+    background-color: dodgerblue;
+    border-color: blue;
+    color: #fafafa;
+    font-weight: 700;
+}
+
+.l-button {
+    padding-right: 0;
+}
+
+.m-button {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.r-button {
+    padding-left: 0;
 }
 
 .logo {
     max-width: 100%;
     max-height: 100%;
-    display: block;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
 }
 
+#heading, #contact {
+    display: inline-block;
+}
+
 .header-style {
-    padding: 2.5% 0;
+    vertical-align: bottom;
+    width: 100%;
+}
+
+.contact-style {
+    vertical-align: bottom;
+    text-align: right;
+    width: 100%;
 }
 
 .btn {
     width: 100%;
+}
+
+.iw_table_row {
+    height: 18px;
+}
+
+.iw_attribute_name {
+    font-weight: bold;
+    text-align: right;
+}
+
+.iw_table_icon {
+    text-align: right;
+}
+
+.click {
+    background: rgba(0, 0, 0, 0.2);
 }
