@@ -1,15 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round:100,200,300,400,500,600,700|Lobster:100,200,300,400,500,600,700');
+
 body {
     background-image: url("../images/background-image.png");
+    height: 100%;
 }
 
-body > div {
+body>div {
     background-color: rgba(57, 56, 58, 0.8);
     color: #fafafa;
+    min-height: 100%;
 }
 
-footer, header {
+header {
     background-color: rgba(57, 56, 58, 1);
     color: #fafafa;
+}
+
+footer {
+    background-color: rgba(57, 56, 58, 1);
+    color: #fafafa;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    color: #fafafa;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+p .fa {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+div h5 {
+    font-weight: 600;
+}
+
+h1,
+h3,
+h4,
+h5 {
+    font-family: "Lobster", sans-serif;
+}
+
+p {
+    font-family: "Varela Round", sans-serif;
+}
+
+p span {
+    font-family: "Lobster", sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+#contact {
+    margin-top: 20px;
 }
 
 #info-content {
@@ -20,8 +71,13 @@ footer, header {
     padding: 20px;
 }
 
-#map, #buttons {
+#map,
+#buttons {
     margin-bottom: 20px;
+}
+
+#map {
+    min-height: 499px;
 }
 
 #search-hotels {
@@ -31,58 +87,41 @@ footer, header {
     font-weight: 700;
 }
 
-#search-museum, #search-zoo, #search-shopping {
+#search-museum,
+#search-zoo,
+#search-shopping {
     background-color: firebrick;
     border-color: darkred;
     color: #fafafa;
     font-weight: 700;
 }
 
-#search-restaurant, #search-bar, #search-cafe {
+#search-restaurant,
+#search-bar,
+#search-cafe {
     background-color: dodgerblue;
     border-color: blue;
     color: #fafafa;
     font-weight: 700;
 }
 
-.l-button {
-    padding-right: 0;
-}
-
-.m-button {
-    padding-right: 0;
-    padding-left: 0;
-}
-
-.r-button {
-    padding-left: 0;
-}
-
 .logo {
-    max-width: 100%;
-    max-height: 100%;
-    display: inline-block;
+    width: 69px;
+    height: 69px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
 }
 
-#heading, #contact {
-    display: inline-block;
-}
-
-.header-style {
-    vertical-align: bottom;
-    width: 100%;
-}
-
-.contact-style {
-    vertical-align: bottom;
+.contact {
+    padding-top: 29px;
     text-align: right;
-    width: 100%;
 }
 
 .btn {
     width: 100%;
+    font-family: "Varela Round", sans-serif;
 }
 
 .iw_table_row {
@@ -100,4 +139,42 @@ footer, header {
 
 .click {
     background: rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width: 991px) {
+    #footer-details div {
+        border-bottom: #353131 solid 3px;
+    }
+    .l-button {
+        padding-right: 0;
+    }
+
+    .m-button {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .r-button {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    #map {
+        min-height: 650px;
+    }
+
+    .btn {
+        margin-bottom: 20px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    body>div {
+        text-align: center;
+    }
+    #heading {
+        border-bottom: #353131 solid 3px;
+    }
 }
