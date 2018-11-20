@@ -1,20 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round:100,200,300,400,500,600,700|Lobster:100,200,300,400,500,600,700');
 
+/* General */
+
 body {
     background-image: url("../images/background-image.png");
-    height: 100%;
 }
 
 body>div {
     background-color: rgba(57, 56, 58, 0.8);
     color: #fafafa;
-    min-height: 100%;
 }
 
-header {
-    background-color: rgba(57, 56, 58, 1);
-    color: #fafafa;
+h1,
+h3,
+h4 {
+    font-family: "Lobster", sans-serif;
 }
+
+p {
+    font-family: "Varela Round", sans-serif;
+}
+
+/* Footer */
 
 footer {
     background-color: rgba(57, 56, 58, 1);
@@ -28,6 +35,11 @@ li a {
     display: inline-block;
 }
 
+li a:hover {
+    text-decoration: none;
+    color: #fafafa;
+}
+
 ul {
     list-style-type: none;
     padding-left: 0;
@@ -38,38 +50,42 @@ p .fa {
     font-size: 18px;
 }
 
-div h5 {
-    font-weight: 600;
-}
-
-h1,
-h3,
-h4,
-h5 {
-    font-family: "Lobster", sans-serif;
-}
-
-p {
-    font-family: "Varela Round", sans-serif;
-}
-
 p span {
     font-family: "Lobster", sans-serif;
     font-size: 18px;
     font-weight: 100;
 }
 
+/* Heading */
+
+header {
+    background-color: rgba(57, 56, 58, 1);
+    color: #fafafa;
+}
+
 #contact {
     margin-top: 20px;
 }
 
-#info-content {
-    color: #000;
+.logo {
+    width: 69px;
+    height: 69px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.contact {
+    padding-top: 29px;
+    text-align: right;
 }
 
 #header {
     padding: 20px;
 }
+
+/* Map */
 
 #map,
 #buttons {
@@ -78,6 +94,17 @@ p span {
 
 #map {
     min-height: 499px;
+}
+
+/* Buttons */
+
+.btn {
+    width: 100%;
+    font-family: "Varela Round", sans-serif;
+}
+
+.click {
+    background: rgba(0, 0, 0, 0.2);
 }
 
 #search-hotels {
@@ -105,24 +132,9 @@ p span {
     font-weight: 700;
 }
 
-.logo {
-    width: 69px;
-    height: 69px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-}
 
-.contact {
-    padding-top: 29px;
-    text-align: right;
-}
 
-.btn {
-    width: 100%;
-    font-family: "Varela Round", sans-serif;
-}
+/* Info Window */
 
 .iw_table_row {
     height: 18px;
@@ -137,9 +149,11 @@ p span {
     text-align: right;
 }
 
-.click {
-    background: rgba(0, 0, 0, 0.2);
+#info-content {
+    color: #000;
 }
+
+/* Media Queries */
 
 @media(max-width: 991px) {
     #footer-details div {
