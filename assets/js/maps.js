@@ -46,7 +46,7 @@ function initMap() {
             $("#buttons").slideDown('slow');
         }
         else {
-            document.getElementById('autocomplete').placeholder = 'Enter a city';
+            document.getElementById('city').placeholder = 'Enter a city';
         }
     }
 }
